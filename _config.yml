@@ -1,0 +1,59 @@
+# Basic
+title: 大芋
+subtitle: be fool, be cool
+description:
+url: http://localhost:4000
+author: Spud Hsu
+email: supersheepxjy@gmail.com
+language: 
+
+# Permalink
+root: /
+permalink: :year/:month/:day/:title/
+tag_dir: tags
+archive_dir: archives
+category_dir: posts
+new_post_name: :title.md
+
+# Archives
+archive: 2
+category: 2
+tag: 2
+
+# Server
+port: 4000
+logger: false
+logger_format:
+
+# Date / Time format
+date_format: MMM D, YYYY
+time_format: H:mm:ss
+
+# Pagination
+per_page: 10
+pagination_dir: page
+
+# Disqus
+disqus_shortname:
+
+# Extensions
+plugins: hexo-migrator-wordpress
+theme: left
+exclude_generator:
+
+# Enhancement
+auto_spacing: false
+titlecase: false
+highlight:
+  enable: true
+  backtick_code_block: true
+  line_number: true
+
+# Accounts
+usernames:
+  github: supersheep
+  twitter: sweetpotato
+
+# Deployment
+deploy:
+  type:
