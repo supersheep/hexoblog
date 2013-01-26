@@ -11,7 +11,7 @@ tags:
 不同媒介间的通信，最基本的做法，说白了就是互相通过字符串来传递信息。先来看flash和php之间的消息传递，其实和后端通信，说白了就是发http请求过去，拿到运算结果，再做分析处理罢了，ajax是如此，flash也一样， 只是用来发请求的对象略有不同而已，做法如下。
 
 **ajax:**
-<pre lang="javascript">
+``` js
 var req;
 req = new XMLHttpRequest();
 req.open('POST','remote.php');
@@ -23,9 +23,11 @@ function handler() {
 	if(this.readyState == 4 &amp;&amp; this.status == 200) {
 		console.log(this.responseText);
 	}
-}</pre>
+}
+```
+
 **flash:**
-<pre lang="actionscript">
+``` actionscript
 var loader,req,data；
 var loader,req,data;
 loader = new URLLoader(); // flash.net.URLLoader
@@ -41,9 +43,11 @@ loader.load(req);
 
 function handler(e:Event):void{
 	trace(loader.data);//use a certain object to parse it as you like
-}</pre>
+}
+```
+
 得到的response差不多都是这样的
-<pre lang="text">
+``` text
 POST http://spud.in/demo/flash/remote/remote.php HTTP/1.1
 Host: spud.in
 Connection: keep-alive
@@ -58,20 +62,25 @@ Accept-Encoding: gzip,deflate,sdch
 Accept-Language: zh-CN,zh;q=0.8
 Accept-Charset: UTF-8,*;q=0.5
 
-say=hey%20man</pre>
+say=hey%20man
+```
+
 这部分就这点花头了，这些对象还有更多变的用法，但最基本的就这些了。下面来说下flash和页面上的js之间是如何交互的。
 
 自打Flash 8开始，as中引入了ExternalInterface 这个对象（flash.external.ExternalInterface）。
 
 **flash -&gt; js:**
-
+``` actionscript
 ExternalInterface.call(funcionName:String, ... arguments):*
+```
 
 可以调用到window对象下的functionName方法。
 
 **js -&gt; flash:**
 
+``` actionscript
 ExternalInterface.addCallback(functionName:String, closure:Function):void
+```
 
 这个方法会在flash被载入后，将特定的方法丢到承载他的&lt;object&gt;节点上。
 

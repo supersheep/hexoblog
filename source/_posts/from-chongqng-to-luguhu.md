@@ -6,7 +6,7 @@ comments: true
 tags: 
 ---
 
-![重庆磁器口](http://spud.in/wp-content/gallery/goluguhu/45440029_0.jpg)
+![重庆磁器口](http://ww3.sinaimg.cn/large/a74ecc4cjw1e171ht6ysej.jpg)
 
 朋友去泸沽湖达祖小学做志愿者，帮忙整理了一下图书馆资料，之后就一直教唆我过去也出把力，他们也刚好在招网站建设志愿者之类的，刚好自己本来就有想去云南玩的打算，刚好找到了一个好借口。
 
@@ -153,5 +153,3 @@ google地图坑爹，把青旅的位置标到市政府那儿去了，结果绕�
 **5-29**
 
 打道回府。离开时发现青旅的大堂满是老外，旅游旺季到来了。
-
-[nggallery id=1] 
