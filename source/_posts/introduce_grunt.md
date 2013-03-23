@@ -6,7 +6,7 @@ comments: true
 tags:
 ---
 
-Grunt是一枚基于Task的静态文件打包工具。我们完成开发要上线之前，需要对js,css进行检查，跑单元测试，然后编译，压缩，合并这些事情，以节省最终用户的加载时间。这样的事情自然可以由简单的shell脚本来进行，但是项目多了跨度大了，就希望规则方便编写，易于维护，这个工具可以跨平台blahblahblah……
+Grunt是一枚基于Task的静态文件打包工具。我们完成开发要上线之前，需要对js,css进行检查，跑单元测试，然后编译，压缩，合并这些事情，以节省最终用户的加载时间。这样的事情自然可以由简单的shell脚本来进行，但是项目多了跨度大了，就希望规则方便编写，易于维护，这个工具可以跨平台等等等，Grunt正式你所需要的（威猛先生脸
 
 来看下怎么用：
 
@@ -72,7 +72,7 @@ grunt // 构建项目
 
 **方便的文件收集**
 
-通过识别配置中是否包含src、dest或者files来收集需要处理的文件，可以在自定义的taskFunction中通过this.files拿到，支持wildcard。
+通过识别配置中是否包含`src`、`dest`或者`files`来收集需要处理的文件，可以在自定义的taskFunction中通过`this.files`拿到，支持wildcard。
 
 **自定义task接口**
 
@@ -85,7 +85,7 @@ grunt.registerMultiTask(taskName, [description, ] taskFunction)
 
 做核心，做接口，让社区来做贡献，可以起到四两拨千斤的功效。今天下午看到[这个页面](http://gruntjs.com/plugins)的时候就哭出来了。提供可能性，然后功能的丰富只是时间问题。
 
-实际上grunt的插件机制说白了也就是通过loadNpmTasks去node_modules里面找对应的插件文件夹下面的tasks目录中的js，进而调用以上两个api来注册task。
+实际上grunt的插件机制说白了也就是通过`loadNpmTasks`去`node_modules`里面找对应的插件文件夹下面的`tasks`目录中的js，进而调用以上两个api来注册task。
 
 再说一个不置可否的功能，就是watch了。功能上就是观察源码是否被改动过，若有改动则自动触发构建任务。很多工具都提供了这样的功能，不过就generating这点来讲我觉得很不环保。像我这样平时习惯了敲一句话按一下command+s的，难道要每一下都把所有文件都重新打一遍么。这种事情由本地静态服务做掉就ok了，访问的时候才生成需要生成的内容。进入排错阶段，自动触发集成测试的话还是比较有意义的。
 
