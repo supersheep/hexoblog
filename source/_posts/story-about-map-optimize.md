@@ -39,4 +39,7 @@ tags:
 2013-02-19
 补充：ie下动态创建的iframe所添加的onload会无法触发，需要使用attachEvent来做兼容，也可以使用类库包装的方法来绑定事件。[refer](http://www.xiaoxiaozi.com/2010/01/05/1683/)
 
+2013-03-23
+补充：ie6先添加src后插入dom的iframe节点会存在无法加载的情况，需要在插入dom后手动再设置一次src。
+
 
