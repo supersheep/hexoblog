@@ -77,6 +77,6 @@ describe("test wrap",function(){
 });
 ```
 
-sinon提供了许多方法，可以用来模拟各种参数回调返回值之类，可以去官方文档上翻翻。文章里说到的示例丢了个项目到github上[戳我](git@github.com:supersheep/grunt-sinon-sample.git)，有兴趣的同学可以拿下来看看。
+sinon提供了许多方法，可以用来模拟各种参数回调返回值之类，可以去官方文档上翻翻。文章里说到的示例丢了个项目到github上[戳我](https://github.com/supersheep/grunt-sinon-sample)，有兴趣的同学可以拿下来看看。
 
 PS:这个标题看起来很ppg有没有。
