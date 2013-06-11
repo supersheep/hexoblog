@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sinonjs，你的js测试好伙伴
+title: Sinonjs，你的js mock测试好伙伴
 date: 2013-05-03 22:11:16
 comments: true
 tags:
